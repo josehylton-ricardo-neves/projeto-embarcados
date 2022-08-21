@@ -1,0 +1,13 @@
+menu "ds18b20 Configuration"
+
+config DS18B20_ONE_WIRE_GPIO
+    int "DS18B20 OneWire GPIO number"
+	default 4
+	help
+		GPIO number (IOxx) to access One Wire Bus.
+
+		Some GPIOs are used for other purposes (flash connections, etc.) and cannot be used.
+
+		GPIOs 34-39 are input-only so cannot be used to drive the One Wire Bus.
+
+endmenu

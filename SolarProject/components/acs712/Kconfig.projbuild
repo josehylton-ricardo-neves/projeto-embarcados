@@ -1,0 +1,10 @@
+menu "ACS712 Configuration"
+
+    config ACS712_ADC_CHANNEL
+        int "CHANNEL TO CONNECT ACS712"
+        default 34
+        help
+            ADC CHANNEL to connect acs712 sensor in this project you need to use ADC1_CHANNEL to avoid some problems 
+			because the WIFI module use some ADC2_CHANNEL.
+
+endmenu
