@@ -1,8 +1,8 @@
 menu "DC VOLTAGE SENSOR Configuration"
 
     config DC_VOLTAGE_SENSOR
-        int "CHANNEL TO CONNECT DC VOLTAGE SENSOR"
-        default 35
+        int "ADC1 Channel to connect DC VOLTAGE SENSOR"
+        default 7
         help
             ADC CHANNEL to connect dc voltage sensor in this project you need to use ADC1_CHANNEL to avoid some problems 
 			because the WIFI module use some ADC2_CHANNEL.

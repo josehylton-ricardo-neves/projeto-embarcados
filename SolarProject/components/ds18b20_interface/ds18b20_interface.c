@@ -23,7 +23,7 @@ DS18B20_ERROR error = 0;
 float reading = 0;
 
 
-void init_ds18b20() {
+void init_ds18b20_sensor() {
     
     owb = owb_rmt_initialize(&rmt_driver_info, GPIO_DS18B20_0, RMT_CHANNEL_1, RMT_CHANNEL_0);
     owb_use_crc(owb, true);
@@ -46,7 +46,7 @@ void init_ds18b20() {
 }
 
 
-float read_temperature() {
+float read_ds18b20_sensor() {
 
         ds18b20_convert_all(owb);
         ds18b20_wait_for_conversion(device);

@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "sensor_tensao_dc.h"
+#include "dc_voltage_sensor.h"
 #include "driver/adc.h"
 
 #define DC_VOLTAGE_SENSOR CONFIG_DC_VOLTAGE_SENSOR

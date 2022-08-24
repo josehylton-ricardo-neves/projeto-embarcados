@@ -10,8 +10,6 @@
 #include "lwip/err.h"
 #include "lwip/sys.h"
 
-//#include "sdkconfig.h"
-
 #include "wifi.h"
 
 #define WIFI_CONNECTED_BIT BIT0

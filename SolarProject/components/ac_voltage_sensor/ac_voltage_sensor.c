@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "ac_voltage_sensor.h"
 #include "driver/gpio.h"
+#include "stdbool.h"
 
 #define AC_VOLTAGE_SENSOR CONFIG_AC_VOLTAGE_SENSOR
 

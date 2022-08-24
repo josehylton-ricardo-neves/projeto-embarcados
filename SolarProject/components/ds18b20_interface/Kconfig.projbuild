@@ -1,8 +1,8 @@
-menu "ds18b20 Configuration"
+menu "DS18B20 SENSOR Configuration"
 
 config DS18B20_ONE_WIRE_GPIO
     int "DS18B20 OneWire GPIO number"
-	default 4
+	default 32
 	help
 		GPIO number (IOxx) to access One Wire Bus.
 

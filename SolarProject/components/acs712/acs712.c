@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "acs712.h"
-#include "esp_log.h"
 #include "driver/adc.h"
 
 #define ACS712_ADC_CHANNEL CONFIG_ACS712_ADC_CHANNEL
@@ -12,13 +11,13 @@ void calibrate_sensor(){
     zero = adc1_get_raw(ACS712_ADC_CHANNEL);
 }
 
-void init_acs712(){
+void init_acs712_sensor(){
 	adc1_config_channel_atten(ACS712_ADC_CHANNEL, ADC_ATTEN_DB_11);
     init = 1;
     calibrate_sensor();
 }
 
-float read_acs712(){
+float read_acs712_sensor(){
     if(init == 1) {
         int measure_value = adc1_get_raw(ACS712_ADC_CHANNEL);
         uint8_t current_value = measure_value - zero;
