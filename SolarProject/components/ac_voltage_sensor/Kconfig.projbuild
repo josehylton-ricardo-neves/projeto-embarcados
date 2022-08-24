@@ -1,9 +1,0 @@
-menu "AC VOLTAGE SENSOR Configuration"
-
-    config AC_VOLTAGE_SENSOR
-        int "AC VOLTAGE SENSOR GPIO number"
-        default 33
-        help
-            GPIO number to connect ac voltage sensor.
-
-endmenu
